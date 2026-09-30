@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Five Chandigarh | Luxury Dining & Bar Sector 26</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        darkBg: '#0F0D0B',
+                        cardBg: '#16120F',
+                        accent: '#D97706',
+                        accentLight: '#F59E0B',
+                        mutedText: '#A89888',
+                        borderCol: '#2C241E',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F0D0B;
+            color: #F3EFE6;
+            font-family: 'Inter', sans-serif;
+            selection-background-color: #D97706;
+            selection-color: #ffffff;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F0D0B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2C241E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D97706;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#0F0D0B] text-[#F3EFE6] relative">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-gradient-to-b from-[#0F0D0B]/80 to-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#D97706] to-[#F59E0B] flex items-center justify-center shadow-lg shadow-[#D97706]/20 group-hover:scale-105 transition-transform">
+                    <i data-lucide="sparkles" class="w-5 h-5 text-[#0F0D0B]"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-[0.2em] font-serif text-[#F3EFE6]">TIGER FIVE</span>
+                    <span class="block text-[10px] tracking-[0.3em] text-[#D97706] uppercase">Chandigarh</span>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="hover:text-[#D97706] transition-colors">Home</a>
+                <a href="#story" class="hover:text-[#D97706] transition-colors">Our Story</a>
+                <a href="#cuisine" class="hover:text-[#D97706] transition-colors">Cuisine</a>
+                <a href="#signature" class="hover:text-[#D97706] transition-colors">Signature</a>
+                <a href="#ambience" class="hover:text-[#D97706] transition-colors">Experience</a>
+                <a href="#gallery" class="hover:text-[#D97706] transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-[#D97706] transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="#reservation" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-[#D97706] to-[#B45309] text-white font-medium text-sm tracking-wider shadow-lg shadow-[#D97706]/30 hover:scale-[1.02] transition-all flex items-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> Reserve via WhatsApp
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-[#F3EFE6] focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 right-0 bg-[#16120F] border-b border-[#2C241E] p-6 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
+            <a href="#home" class="mobile-link text-lg hover:text-[#D97706]">Home</a>
+            <a href="#story" class="mobile-link text-lg hover:text-[#D97706]">Our Story</a>
+            <a href="#cuisine" class="mobile-link text-lg hover:text-[#D97706]">Cuisine</a>
+            <a href="#signature" class="mobile-link text-lg hover:text-[#D97706]">Signature</a>
+            <a href="#ambience" class="mobile-link text-lg hover:text-[#D97706]">Experience</a>
+            <a href="#gallery" class="mobile-link text-lg hover:text-[#D97706]">Gallery</a>
+            <a href="#contact" class="mobile-link text-lg hover:text-[#D97706]">Contact</a>
+            <a href="#reservation" class="mobile-link mt-2 text-center py-3 rounded-full bg-gradient-to-r from-[#D97706] to-[#B45309] text-white font-medium flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> Reserve via WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=90" alt="Tiger Five Chandigarh Ambiance" class="w-full h-full object-cover scale-105 animate-pulse duration-[10000ms]">
+        </div>
+        <div class="relative z-20 max-w-5xl mx-auto px-6 text-center flex flex-col items-center mt-12">
+            <a href="https://www.google.com/maps/search/?api=1&query=Tiger+Five+Sector+26+Chandigarh" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1F1915]/80 border border-[#D97706]/30 text-[#D97706] text-xs font-semibold tracking-[0.25em] uppercase mb-6 backdrop-blur-md hover:border-[#D97706] transition-colors">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> SCO 5, Madhya Marg, Sector 26, Chandigarh
+                <i data-lucide="external-link" class="w-3 h-3 ml-1"></i>
+            </a>
+            <h1 class="text-5xl md:text-8xl font-serif font-bold tracking-tight text-[#F3EFE6] mb-6 drop-shadow-2xl">
+                TIGER FIVE
+            </h1>
+            <p class="text-lg md:text-2xl text-[#D6C5B2] font-light max-w-2xl mb-10 tracking-wide">
+                A Modern Multi-Cuisine Dining Experience in Chandigarh
+            </p>
+            <div class="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
+                <a href="#cuisine" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-[#D97706] to-[#B45309] text-white font-medium tracking-widest shadow-xl shadow-[#D97706]/30 hover:scale-105 transition-all flex items-center justify-center gap-3">
+                    Explore Menu <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#reservation" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#1F1915]/90 border border-[#443831] text-[#F3EFE6] font-medium tracking-widest hover:border-[#D97706] hover:bg-[#2C241E] transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-[#25D366]"></i> Reserve on WhatsApp
+                </a>
+            </div>
+            <div class="mt-16 pt-8 border-t border-[#2C241E]/60 grid grid-cols-2 md:grid-cols-3 gap-8 text-xs text-[#A89888] tracking-widest uppercase">
+                <div class="flex items-center justify-center gap-2">
+                    <i data-lucide="clock" class="w-4 h-4 text-[#D97706]"></i>
+                    <span>Open Daily: 12:00 PM - 12:00 AM</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i data-lucide="star" class="w-4 h-4 text-[#D97706]"></i>
+                    <span>4.4 Rating (1,010+ Reviews)</span>
+                </div>
+                <div class="col-span-2 md:col-span-1 flex items-center justify-center gap-2">
+                    <i data-lucide="utensils" class="w-4 h-4 text-[#D97706]"></i>
+                    <span>North Indian, Sushi & Asian</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="py-28 px-6 md:px-12 bg-[#120F0D] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-6 relative">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" alt="Chef preparing dish" class="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-72 h-72 rounded-2xl overflow-hidden shadow-2xl border border-[#2C241E] hidden md:block z-20">
+                    <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=600&q=80" alt="Tiger Five Outdoor Dining" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-[#D97706]/10 rounded-full blur-3xl pointer-events-none"></div>
+            </div>
+            <div class="lg:col-span-6 flex flex-col justify-center">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3">The Tiger Five Experience</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-6 leading-tight">
+                    Where Sophistication Meets Culinary Artistry in Chandigarh
+                </h2>
+                <p class="text-[#A89888] font-light leading-relaxed mb-6 text-base">
+                    Nestled in the vibrant heart of Sector 26 on Madhya Marg, Tiger Five has redefined dining in Chandigarh. We combine a sophisticated yet comfortable ambience with a bold multi-cuisine menu that brings together rich North Indian heritage, contemporary Asian dim sums, handcrafted sushi, sliders, and vibrant social platters.
+                </p>
+                <p class="text-[#A89888] font-light leading-relaxed mb-8 text-base">
+                    Whether you are gathering for an intimate family dinner, celebrating with a group of friends, or hosting a corporate gathering, Tiger Five delivers an atmosphere defined by warmth, impeccable hospitality, and memorable flavours.
+                </p>
+                <div class="grid grid-cols-3 gap-6 pt-6 border-t border-[#2C241E]">
+                    <div>
+                        <span class="block text-3xl font-serif font-bold text-[#D97706] mb-1">1000+</span>
+                        <span class="text-xs text-[#A89888] uppercase tracking-wider">Happy Reviews</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-serif font-bold text-[#D97706] mb-1">6+</span>
+                        <span class="text-xs text-[#A89888] uppercase tracking-wider">Cuisine Styles</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-serif font-bold text-[#D97706] mb-1">SCO 5</span>
+                        <span class="text-xs text-[#A89888] uppercase tracking-wider">Madhya Marg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cuisine" class="py-28 px-6 md:px-12 bg-[#0F0D0B] relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">Diverse Culinary Identity</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-6">Our Culinary Universe</h2>
+                <p class="text-[#A89888] font-light">Explore our carefully curated categories designed to satisfy every craving, from traditional North Indian curries to modern Japanese sushi and artisan sliders.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div onclick="selectCategory('North Indian')" class="group relative h-[380px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-[#2C241E] transition-all duration-500 hover:-translate-y-2 hover:border-[#D97706]/50">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80" alt="North Indian" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-transparent group-hover:via-[#0F0D0B]/40 transition-colors"></div>
+                    </div>
+                    <div class="absolute inset-0 z-10 p-8 flex flex-col justify-end">
+                        <span class="text-xs font-semibold text-[#D97706] tracking-[0.2em] uppercase mb-1">North Indian Classics</span>
+                        <h3 class="text-2xl font-serif font-bold text-[#F3EFE6] mb-2">INDIAN</h3>
+                        <p class="text-sm text-[#D6C5B2] font-light mb-4 line-clamp-2">Rich curries, tandoori kebabs, breads, and authentic spice blends.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#D97706] group-hover:translate-x-2 transition-transform">
+                            <span>Explore Category</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="selectCategory('Dim Sum')" class="group relative h-[380px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-[#2C241E] transition-all duration-500 hover:-translate-y-2 hover:border-[#D97706]/50">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80" alt="Dim Sum" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-transparent group-hover:via-[#0F0D0B]/40 transition-colors"></div>
+                    </div>
+                    <div class="absolute inset-0 z-10 p-8 flex flex-col justify-end">
+                        <span class="text-xs font-semibold text-[#D97706] tracking-[0.2em] uppercase mb-1">Modern Asian Selections</span>
+                        <h3 class="text-2xl font-serif font-bold text-[#F3EFE6] mb-2">DIM SUM</h3>
+                        <p class="text-sm text-[#D6C5B2] font-light mb-4 line-clamp-2">Delicate crystal dumplings and fluffy bao buns with savory fillings.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#D97706] group-hover:translate-x-2 transition-transform">
+                            <span>Explore Category</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="selectCategory('Sushi')" class="group relative h-[380px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-[#2C241E] transition-all duration-500 hover:-translate-y-2 hover:border-[#D97706]/50">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80" alt="Sushi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-transparent group-hover:via-[#0F0D0B]/40 transition-colors"></div>
+                    </div>
+                    <div class="absolute inset-0 z-10 p-8 flex flex-col justify-end">
+                        <span class="text-xs font-semibold text-[#D97706] tracking-[0.2em] uppercase mb-1">Contemporary Rolls</span>
+                        <h3 class="text-2xl font-serif font-bold text-[#F3EFE6] mb-2">SUSHI</h3>
+                        <p class="text-sm text-[#D6C5B2] font-light mb-4 line-clamp-2">Artisanal maki and nigiri crafted with premium ingredients and sauces.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#D97706] group-hover:translate-x-2 transition-transform">
+                            <span>Explore Category</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="selectCategory('Sliders')" class="group relative h-[380px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-[#2C241E] transition-all duration-500 hover:-translate-y-2 hover:border-[#D97706]/50">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Sliders" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-transparent group-hover:via-[#0F0D0B]/40 transition-colors"></div>
+                    </div>
+                    <div class="absolute inset-0 z-10 p-8 flex flex-col justify-end">
+                        <span class="text-xs font-semibold text-[#D97706] tracking-[0.2em] uppercase mb-1">Modern Comfort Food</span>
+                        <h3 class="text-2xl font-serif font-bold text-[#F3EFE6] mb-2">SLIDERS</h3>
+                        <p class="text-sm text-[#D6C5B2] font-light mb-4 line-clamp-2">Gourmet brioche buns packed with bold flavors and crispy textures.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#D97706] group-hover:translate-x-2 transition-transform">
+                            <span>Explore Category</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="selectCategory('Platters')" class="group relative h-[380px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-[#2C241E] transition-all duration-500 hover:-translate-y-2 hover:border-[#D97706]/50">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Platters" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-transparent group-hover:via-[#0F0D0B]/40 transition-colors"></div>
+                    </div>
+                    <div class="absolute inset-0 z-10 p-8 flex flex-col justify-end">
+                        <span class="text-xs font-semibold text-[#D97706] tracking-[0.2em] uppercase mb-1">Sharing Experiences</span>
+                        <h3 class="text-2xl font-serif font-bold text-[#F3EFE6] mb-2">PLATTERS</h3>
+                        <p class="text-sm text-[#D6C5B2] font-light mb-4 line-clamp-2">Generous vegetarian and non-vegetarian sharing platters for groups.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#D97706] group-hover:translate-x-2 transition-transform">
+                            <span>Explore Category</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="selectCategory('Desserts')" class="group relative h-[380px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-[#2C241E] transition-all duration-500 hover:-translate-y-2 hover:border-[#D97706]/50">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Desserts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-transparent group-hover:via-[#0F0D0B]/40 transition-colors"></div>
+                    </div>
+                    <div class="absolute inset-0 z-10 p-8 flex flex-col justify-end">
+                        <span class="text-xs font-semibold text-[#D97706] tracking-[0.2em] uppercase mb-1">Sweet & Crafted</span>
+                        <h3 class="text-2xl font-serif font-bold text-[#F3EFE6] mb-2">DESSERTS & DRINKS</h3>
+                        <p class="text-sm text-[#D6C5B2] font-light mb-4 line-clamp-2">Indulgent artisanal desserts paired with signature mocktails and beverages.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#D97706] group-hover:translate-x-2 transition-transform">
+                            <span>Explore Category</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signature" class="py-28 px-6 md:px-12 bg-[#120F0D] overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">Curated Excellence</span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#F3EFE6]">Signature Selection</h2>
+                </div>
+                <p class="text-[#A89888] font-light max-w-md mt-4 md:mt-0">
+                    Discover the culinary highlights that have won the hearts of food lovers across Chandigarh.
+                </p>
+            </div>
+            <div id="signature-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Dynamically populated or static markup -->
+                <div class="bg-[#16120F] rounded-2xl overflow-hidden border border-[#2C241E] group hover:border-[#D97706]/40 transition-all duration-300 shadow-xl flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=900&q=80" alt="Chicken Tikka Cigar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-[#0F0D0B]/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#D97706] border border-[#2C241E]">Starters</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Chicken Tikka Cigar</h3>
+                                <span class="text-lg font-bold text-[#D97706]">₹625</span>
+                            </div>
+                            <p class="text-sm text-[#A89888] font-light mb-6">Crispy spring roll pastry with spiced chicken tikka & butter chicken sauce.</p>
+                        </div>
+                        <button onclick="selectCategory('Starters')" class="w-full py-2.5 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold tracking-wider text-[#F3EFE6] hover:bg-[#D97706] hover:text-[#0F0D0B] transition-colors">
+                            View in Menu
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-[#16120F] rounded-2xl overflow-hidden border border-[#2C241E] group hover:border-[#D97706]/40 transition-all duration-300 shadow-xl flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=80" alt="Crispy Chilli Lamb" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-[#0F0D0B]/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#D97706] border border-[#2C241E]">Asian</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Crispy Chilli Lamb</h3>
+                                <span class="text-lg font-bold text-[#D97706]">₹725</span>
+                            </div>
+                            <p class="text-sm text-[#A89888] font-light mb-6">Shredded lamb tossed in a spicy, tangy Sichuan pepper glaze.</p>
+                        </div>
+                        <button onclick="selectCategory('Asian')" class="w-full py-2.5 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold tracking-wider text-[#F3EFE6] hover:bg-[#D97706] hover:text-[#0F0D0B] transition-colors">
+                            View in Menu
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-[#16120F] rounded-2xl overflow-hidden border border-[#2C241E] group hover:border-[#D97706]/40 transition-all duration-300 shadow-xl flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Veg Grand Platter" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-[#0F0D0B]/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#D97706] border border-[#2C241E]">Platters</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Veg Grand Platter</h3>
+                                <span class="text-lg font-bold text-[#D97706]">₹1295</span>
+                            </div>
+                            <p class="text-sm text-[#A89888] font-light mb-6">Tandoori paneer, stuffed mushrooms, dahi ke kebab & malai broccoli.</p>
+                        </div>
+                        <button onclick="selectCategory('Platters')" class="w-full py-2.5 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold tracking-wider text-[#F3EFE6] hover:bg-[#D97706] hover:text-[#0F0D0B] transition-colors">
+                            View in Menu
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-[#16120F] rounded-2xl overflow-hidden border border-[#2C241E] group hover:border-[#D97706]/40 transition-all duration-300 shadow-xl flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80" alt="Tiger Prawn Tempura Roll" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-[#0F0D0B]/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#D97706] border border-[#2C241E]">Sushi</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Tiger Prawn Tempura Roll</h3>
+                                <span class="text-lg font-bold text-[#D97706]">₹845</span>
+                            </div>
+                            <p class="text-sm text-[#A89888] font-light mb-6">Crispy prawn tempura, avocado, spicy mayo & tobiko.</p>
+                        </div>
+                        <button onclick="selectCategory('Sushi')" class="w-full py-2.5 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold tracking-wider text-[#F3EFE6] hover:bg-[#D97706] hover:text-[#0F0D0B] transition-colors">
+                            View in Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 md:px-12 bg-[#0F0D0B] relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#D97706]/5 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto bg-gradient-to-br from-[#16120F] to-[#120F0D] rounded-3xl p-8 md:p-16 border border-[#2C241E] shadow-2xl relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6">
+                    <span class="inline-block px-3 py-1 rounded-full bg-[#D97706]/15 text-[#D97706] text-xs font-semibold tracking-widest uppercase mb-4 border border-[#D97706]/30">
+                        Artisanal Masterpiece
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-6 leading-tight">
+                        Crafted with Passion, Served with Elegance
+                    </h2>
+                    <p class="text-[#A89888] font-light leading-relaxed mb-8">
+                        Every dish at Tiger Five is an exploration of authentic flavors, premium ingredients, and contemporary presentation. From slow-cooked curries to hand-rolled sushi, our kitchen delivers an unforgettable gastronomic journey.
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-[#D97706]/10 flex items-center justify-center text-[#D97706]">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-[#F3EFE6]">Premium Quality</h4>
+                                <p class="text-xs text-[#A89888]">Fresh, locally sourced produce</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-[#D97706]/10 flex items-center justify-center text-[#D97706]">
+                                <i data-lucide="award" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-[#F3EFE6]">Expert Chefs</h4>
+                                <p class="text-xs text-[#A89888]">Masters of multi-cuisine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-[#2C241E] group">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=80" alt="Delicious Indian Platter" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B]/80 via-transparent to-transparent flex items-end p-6">
+                            <div>
+                                <span class="text-xs font-semibold text-[#D97706] tracking-widest uppercase">Signature Dish</span>
+                                <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Dal Makhani & Artisanal Breads</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ambience" class="py-28 px-6 md:px-12 bg-[#120F0D]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">More Than a Meal</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-6">Atmosphere & Experience</h2>
+                <p class="text-[#A89888] font-light">Step into an environment designed for comfort, luxury, and unforgettable social moments.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Sophisticated Ambience" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/50 to-transparent p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6] mb-2">Sophisticated Ambience</h3>
+                        <p class="text-xs text-[#A89888] font-light">Plush seating, warm lighting, and contemporary decor.</p>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=800&q=80" alt="Outdoor Seating" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/50 to-transparent p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6] mb-2">Outdoor Seating</h3>
+                        <p class="text-xs text-[#A89888] font-light">Breezy patio dining overlooking the lively Sector 26 streetscape.</p>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80" alt="Family & Group Dining" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/50 to-transparent p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6] mb-2">Family & Group Dining</h3>
+                        <p class="text-xs text-[#A89888] font-light">Spacious layouts perfectly suited for celebrations and reunions.</p>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Corporate Gatherings" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/50 to-transparent p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6] mb-2">Corporate Gatherings</h3>
+                        <p class="text-xs text-[#A89888] font-light">Private spaces and attentive service for business dinners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 md:px-12 bg-[#0F0D0B] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto bg-gradient-to-r from-[#16120F] to-[#120F0D] rounded-3xl p-8 md:p-16 border border-[#2C241E] shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div class="max-w-xl">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">Location & Landmark</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-6">Tiger Five Chandigarh</h2>
+                <p class="text-[#A89888] font-light mb-6">
+                    Situated at SCO 5, Madhya Marg, Sector 26, Chandigarh, Tiger Five is anchored in the city's premier dining and entertainment district. Experience the modern architecture and vibrant energy of City Beautiful combined with elite hospitality.
+                </p>
+                <div class="flex flex-wrap items-center gap-6 text-sm text-[#F3EFE6] mb-6">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Tiger+Five+Sector+26+Chandigarh" target="_blank" rel="noreferrer" class="flex items-center gap-2 hover:text-[#D97706] transition-colors">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#D97706]"></i>
+                        <span>Sector 26, Chandigarh <i data-lucide="external-link" class="w-3.5 h-3.5 inline ml-1"></i></span>
+                    </a>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="compass" class="w-5 h-5 text-[#D97706]"></i>
+                        <span>Madhya Marg</span>
+                    </div>
+                </div>
+                <!-- Online Delivery / Listing Badges -->
+                <div class="pt-4 border-t border-[#2C241E] flex flex-wrap gap-3">
+                    <a href="https://www.zomato.com/chandigarh/tiger-five-sector-26" target="_blank" rel="noreferrer" class="px-4 py-2 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold text-[#F3EFE6] hover:border-[#D97706] transition-all flex items-center gap-2">
+                        <span>Zomato</span> <i data-lucide="external-link" class="w-3 h-3 text-[#D97706]"></i>
+                    </a>
+                    <a href="https://www.eazydiner.com/chandigarh/tiger-five-sector-26-chandigarh-693209" target="_blank" rel="noreferrer" class="px-4 py-2 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold text-[#F3EFE6] hover:border-[#D97706] transition-all flex items-center gap-2">
+                        <span>EazyDiner</span> <i data-lucide="external-link" class="w-3 h-3 text-[#D97706]"></i>
+                    </a>
+                    <a href="https://www.district.in/dining/chandigarh/tiger-five-sector-26" target="_blank" rel="noreferrer" class="px-4 py-2 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold text-[#F3EFE6] hover:border-[#D97706] transition-all flex items-center gap-2">
+                        <span>District.in</span> <i data-lucide="external-link" class="w-3 h-3 text-[#D97706]"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full lg:w-[450px] h-[300px] rounded-2xl overflow-hidden border border-[#2C241E] relative shadow-2xl flex flex-col items-center justify-center bg-[#1F1915] p-6 text-center">
+                <i data-lucide="map-pin" class="w-12 h-12 text-[#D97706] mb-3 animate-bounce"></i>
+                <h4 class="font-serif font-bold text-lg text-[#F3EFE6] mb-1">Tiger Five Chandigarh</h4>
+                <p class="text-xs text-[#A89888] mb-4">SCO 5, Madhya Marg, Sector 26, Chandigarh</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Tiger+Five+Sector+26+Chandigarh" target="_blank" rel="noreferrer" class="px-6 py-2.5 rounded-full bg-[#D97706] text-[#0F0D0B] font-semibold text-xs tracking-wider hover:opacity-95 transition-all flex items-center gap-2 shadow-lg">
+                    <span>Open Exact Location in Google Maps</span> <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu-section" class="py-28 px-6 md:px-12 bg-[#120F0D]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">Interactive Menu</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-6">Explore Our Offerings</h2>
+                <p class="text-[#A89888] font-light">From savory North Indian curries to delicate dim sums and artisan sushi rolls.</p>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div id="category-tabs" class="flex items-center justify-center gap-3 flex-wrap mb-12">
+                <!-- Tabs will be rendered by JS -->
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Items will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-28 px-6 md:px-12 bg-[#0F0D0B]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">Visual Journey</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-6">The Tiger Five Gallery</h2>
+                <p class="text-[#A89888] font-light">A glimpse into our ambiance, culinary artistry, and vibrant guest experiences.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-2xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Dining Hall" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#D97706] uppercase tracking-wider">Ambience</span>
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Sophisticated Dining Hall</h3>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-2xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Culinary Craftsmanship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#D97706] uppercase tracking-wider">Food</span>
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Culinary Craftsmanship</h3>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-2xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Signature Platter" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#D97706] uppercase tracking-wider">Food</span>
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Signature Platter</h3>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-2xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=900&q=80" alt="Outdoor Patio Seating" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#D97706] uppercase tracking-wider">Outdoor Seating</span>
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Outdoor Patio Seating</h3>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-2xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Artisanal Cocktails" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#D97706] uppercase tracking-wider">Drinks</span>
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Artisanal Cocktails & Mocktails</h3>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-2xl overflow-hidden group shadow-2xl border border-[#2C241E]">
+                    <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=900&q=80" alt="Joyful Gatherings" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#D97706] uppercase tracking-wider">Experience</span>
+                        <h3 class="text-xl font-serif font-bold text-[#F3EFE6]">Joyful Family Gatherings</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 px-6 md:px-12 bg-[#120F0D]">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">Patron Testimonials</span>
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#F3EFE6] mb-16">What Our Guests Say</h2>
+            <div class="bg-[#16120F] border border-[#2C241E] rounded-3xl p-8 md:p-16 relative shadow-2xl">
+                <div id="testimonial-stars" class="flex items-center justify-center gap-1 text-[#D97706] mb-6">
+                    <!-- populated by js -->
+                </div>
+                <p id="testimonial-text" class="text-xl md:text-2xl font-serif italic text-[#F3EFE6] mb-8 leading-relaxed">
+                    <!-- populated by js -->
+                </p>
+                <h4 id="testimonial-author" class="font-semibold text-base text-[#D97706]"></h4>
+                <span id="testimonial-role" class="block text-xs text-[#A89888] tracking-widest uppercase mt-1"></span>
+                <div class="flex items-center justify-center gap-4 mt-10">
+                    <button onclick="prevTestimonial()" class="w-12 h-12 rounded-full bg-[#1F1915] border border-[#2C241E] flex items-center justify-center text-[#F3EFE6] hover:border-[#D97706] transition-colors">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+                    <button onclick="nextTestimonial()" class="w-12 h-12 rounded-full bg-[#1F1915] border border-[#2C241E] flex items-center justify-center text-[#F3EFE6] hover:border-[#D97706] transition-colors">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="py-28 px-6 md:px-12 bg-[#0F0D0B] relative">
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-[#16120F] to-[#120F0D] rounded-3xl p-8 md:p-16 border border-[#2C241E] shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-[#D97706]/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#D97706] mb-3 block">Table Booking via WhatsApp</span>
+                <h2 class="text-4xl font-serif font-bold text-[#F3EFE6] mb-4">Your Table Awaits</h2>
+                <p class="text-sm text-[#A89888] font-light">Fill in your details below to instantly connect with our reservation desk on WhatsApp (+91 62399 26505).</p>
+            </div>
+            
+            <div id="reservation-success" class="hidden bg-[#1F1915] border border-[#25D366]/40 rounded-2xl p-8 text-center animate-in fade-in duration-500">
+                <i data-lucide="check-circle-2" class="w-12 h-12 text-[#25D366] mx-auto mb-4"></i>
+                <h3 class="text-2xl font-serif font-bold text-[#F3EFE6] mb-2">Redirecting to WhatsApp!</h3>
+                <p class="text-sm text-[#A89888]">Your booking details have been prepared. Please send the message on WhatsApp to confirm your table.</p>
+            </div>
+
+            <form id="reservation-form" onsubmit="handleReservationSubmit(event)" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-[#A89888] mb-2">Full Name *</label>
+                    <input type="text" id="res-name" required placeholder="Aarav Sharma" class="w-full bg-[#1F1915] border border-[#2C241E] rounded-xl px-4 py-3.5 text-[#F3EFE6] text-sm focus:outline-none focus:border-[#D97706] transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-[#A89888] mb-2">Phone Number *</label>
+                    <input type="tel" id="res-phone" required placeholder="+91 9876543210" class="w-full bg-[#1F1915] border border-[#2C241E] rounded-xl px-4 py-3.5 text-[#F3EFE6] text-sm focus:outline-none focus:border-[#D97706] transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-[#A89888] mb-2">Email Address</label>
+                    <input type="email" id="res-email" placeholder="aarav@example.com" class="w-full bg-[#1F1915] border border-[#2C241E] rounded-xl px-4 py-3.5 text-[#F3EFE6] text-sm focus:outline-none focus:border-[#D97706] transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-[#A89888] mb-2">Date *</label>
+                    <input type="date" id="res-date" required class="w-full bg-[#1F1915] border border-[#2C241E] rounded-xl px-4 py-3.5 text-[#F3EFE6] text-sm focus:outline-none focus:border-[#D97706] transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-[#A89888] mb-2">Time *</label>
+                    <select id="res-time" class="w-full bg-[#1F1915] border border-[#2C241E] rounded-xl px-4 py-3.5 text-[#F3EFE6] text-sm focus:outline-none focus:border-[#D97706] transition-colors">
+                        <option value="12:30 PM">12:30 PM (Lunch)</option>
+                        <option value="01:30 PM">01:30 PM (Lunch)</option>
+                        <option value="07:00 PM">07:00 PM (Dinner)</option>
+                        <option value="08:00 PM">08:00 PM (Dinner)</option>
+                        <option value="09:00 PM">09:00 PM (Dinner)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-[#A89888] mb-2">Number of Guests *</label>
+                    <select id="res-guests" class="w-full bg-[#1F1915] border border-[#2C241E] rounded-xl px-4 py-3.5 text-[#F3EFE6] text-sm focus:outline-none focus:border-[#D97706] transition-colors">
+                        <option value="1 Guest">1 Guest</option>
+                        <option value="2 Guests" selected>2 Guests</option>
+                        <option value="4 Guests">4 Guests</option>
+                        <option value="6 Guests">6 Guests</option>
+                        <option value="8+ Guests">8+ Guests (Group/Party)</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-[#A89888] mb-2">Special Requests</label>
+                    <textarea id="res-notes" rows="3" placeholder="Dietary preferences, seating preference (indoor/outdoor), celebration notes..." class="w-full bg-[#1F1915] border border-[#2C241E] rounded-xl px-4 py-3.5 text-[#F3EFE6] text-sm focus:outline-none focus:border-[#D97706] transition-colors resize-none"></textarea>
+                </div>
+                <div class="md:col-span-2 text-center mt-4">
+                    <button type="submit" class="w-full md:w-auto px-12 py-4 rounded-full bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white font-medium tracking-widest shadow-xl shadow-[#25D366]/20 hover:scale-105 transition-all uppercase text-sm flex items-center justify-center gap-3 mx-auto">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Book via WhatsApp (+91 62399 26505)
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-[#0A0807] border-t border-[#2C241E] pt-20 pb-12 px-6 md:px-12 text-[#A89888]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-8 rounded-full bg-[#D97706] flex items-center justify-center text-[#0F0D0B]">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    </div>
+                    <span class="text-lg font-bold tracking-[0.2em] font-serif text-[#F3EFE6]">TIGER FIVE</span>
+                </div>
+                <p class="text-sm font-light leading-relaxed mb-6">
+                    A modern multi-cuisine dining destination bringing together North Indian richness, sushi, dim sums, and vibrant ambience in Sector 26, Chandigarh.
+                </p>
+                <div class="flex items-center gap-3 flex-wrap">
+                    <a href="https://www.instagram.com/tigerfivechandigarh/" target="_blank" rel="noreferrer" class="w-10 h-10 rounded-full bg-[#16120F] border border-[#2C241E] flex items-center justify-center text-[#F3EFE6] hover:text-[#D97706] hover:border-[#D97706] transition-colors" title="Instagram">
+                        <i data-lucide="instagram" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://wa.me/916239926505" target="_blank" rel="noreferrer" class="w-10 h-10 rounded-full bg-[#16120F] border border-[#2C241E] flex items-center justify-center text-[#F3EFE6] hover:text-[#25D366] hover:border-[#25D366] transition-colors" title="WhatsApp">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://www.zomato.com/chandigarh/tiger-five-sector-26" target="_blank" rel="noreferrer" class="px-3 py-2 rounded-xl bg-[#16120F] border border-[#2C241E] text-xs font-semibold text-[#F3EFE6] hover:text-[#D97706] hover:border-[#D97706] transition-colors">
+                        Zomato
+                    </a>
+                    <a href="https://www.eazydiner.com/chandigarh/tiger-five-sector-26-chandigarh-693209" target="_blank" rel="noreferrer" class="px-3 py-2 rounded-xl bg-[#16120F] border border-[#2C241E] text-xs font-semibold text-[#F3EFE6] hover:text-[#D97706] hover:border-[#D97706] transition-colors">
+                        EazyDiner
+                    </a>
+                    <a href="https://www.district.in/dining/chandigarh/tiger-five-sector-26" target="_blank" rel="noreferrer" class="px-3 py-2 rounded-xl bg-[#16120F] border border-[#2C241E] text-xs font-semibold text-[#F3EFE6] hover:text-[#D97706] hover:border-[#D97706] transition-colors">
+                        District.in
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-[#F3EFE6] text-base mb-6 tracking-wide">Location & Contact</h4>
+                <ul class="space-y-4 text-sm font-light">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#D97706] shrink-0 mt-0.5"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Tiger+Five+Sector+26+Chandigarh" target="_blank" rel="noreferrer" class="hover:text-[#D97706] transition-colors">
+                            SCO 5, Madhya Marg, Sector 26, Chandigarh, 160019 <i data-lucide="external-link" class="w-3 h-3 inline ml-1"></i>
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-[#D97706] shrink-0"></i>
+                        <a href="tel:06239926505" class="hover:text-[#D97706] transition-colors">062399 26505</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="clock" class="w-5 h-5 text-[#D97706] shrink-0"></i>
+                        <span>Open Daily: 12:00 PM - 12:00 AM</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-[#F3EFE6] text-base mb-6 tracking-wide">Quick Navigation</h4>
+                <ul class="space-y-3 text-sm font-light">
+                    <li><a href="#home" class="hover:text-[#D97706] transition-colors">Home</a></li>
+                    <li><a href="#story" class="hover:text-[#D97706] transition-colors">Our Story</a></li>
+                    <li><a href="#cuisine" class="hover:text-[#D97706] transition-colors">Cuisine Experience</a></li>
+                    <li><a href="#signature" class="hover:text-[#D97706] transition-colors">Signature Selection</a></li>
+                    <li><a href="#gallery" class="hover:text-[#D97706] transition-colors">Gallery</a></li>
+                    <li><a href="#reservation" class="hover:text-[#D97706] transition-colors">Reserve on WhatsApp</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-[#F3EFE6] text-base mb-6 tracking-wide">Online Ordering & Booking</h4>
+                <div class="flex flex-col gap-2.5 mb-6 text-xs">
+                    <a href="https://www.zomato.com/chandigarh/tiger-five-sector-26" target="_blank" rel="noreferrer" class="hover:text-[#D97706] flex items-center justify-between p-2.5 rounded-lg bg-[#16120F] border border-[#2C241E]">
+                        <span>View on Zomato</span> <i data-lucide="external-link" class="w-3 h-3 text-[#D97706]"></i>
+                    </a>
+                    <a href="https://www.eazydiner.com/chandigarh/tiger-five-sector-26-chandigarh-693209" target="_blank" rel="noreferrer" class="hover:text-[#D97706] flex items-center justify-between p-2.5 rounded-lg bg-[#16120F] border border-[#2C241E]">
+                        <span>Book on EazyDiner</span> <i data-lucide="external-link" class="w-3 h-3 text-[#D97706]"></i>
+                    </a>
+                    <a href="https://www.district.in/dining/chandigarh/tiger-five-sector-26" target="_blank" rel="noreferrer" class="hover:text-[#D97706] flex items-center justify-between p-2.5 rounded-lg bg-[#16120F] border border-[#2C241E]">
+                        <span>Find on District.in</span> <i data-lucide="external-link" class="w-3 h-3 text-[#D97706]"></i>
+                    </a>
+                </div>
+                <a href="https://wa.me/916239926505" target="_blank" rel="noreferrer" class="block text-center px-4 py-3 rounded-full bg-[#25D366] text-black font-semibold text-xs tracking-wider hover:opacity-90 transition-all">
+                    Chat on WhatsApp (+91 62399 26505)
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-[#2C241E] flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-light">
+            <p>© <span id="current-year"></span> Tiger Five Chandigarh. All rights reserved.</p>
+            <div class="text-[#D97706] font-serif tracking-[0.3em] uppercase text-center text-sm font-semibold">
+                COME HUNGRY. LEAVE WITH AN EXPERIENCE.
+            </div>
+            <p>SCO 5, Sector 26, Madhya Marg, Chandigarh</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-[#0F0D0B]/90', 'backdrop-blur-md', 'py-4', 'border-b', 'border-[#2C241E]/40', 'shadow-2xl');
+                navbar.classList.remove('py-6', 'bg-gradient-to-b');
+            } else {
+                navbar.classList.remove('bg-[#0F0D0B]/90', 'backdrop-blur-md', 'py-4', 'border-b', 'border-[#2C241E]/40', 'shadow-2xl');
+                navbar.classList.add('py-6', 'bg-gradient-to-b', 'from-[#0F0D0B]/80', 'to-transparent');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            menuIcon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Menu data
+        const menuCategories = ['Starters', 'North Indian', 'Asian', 'Sushi', 'Dim Sum', 'Sliders', 'Platters', 'Desserts', 'Drinks'];
+        const menuItems = {
+            'Starters': [
+                { name: 'Crispy Corn', desc: 'Golden corn kernels tossed with aromatic spices, fresh bell peppers, and crushed black pepper.', price: '₹475', tag: 'Bestseller', image: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Chicken Tikka Cigar', desc: 'Crispy spring roll pastry wrapped around spiced chicken tikka, served with butter chicken sauce.', price: '₹625', tag: 'Signature', image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Stuffed Mushroom', desc: 'Tandoor-roasted button mushrooms stuffed with spiced paneer, herbs, and molten cheese.', price: '₹545', tag: 'Vegetarian', image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'North Indian': [
+                { name: 'Vegetable Thali Royal', desc: 'A grand curation of seasonal vegetables, paneer specialty, dal makhani, breads, rice, and dessert.', price: '₹795', tag: 'Chef Special', image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Butter Chicken Supreme', desc: 'Tender tandoori chicken simmered in a velvety, buttery tomato gravy scented with fenugreek.', price: '₹685', tag: 'Iconic', image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Dal Makhani Tiger Five', desc: 'Black lentils slow-cooked overnight over live charcoal, finished with artisanal butter and cream.', price: '₹495', tag: 'Classic', image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'Asian': [
+                { name: 'Crispy Chilli Lamb', desc: 'Crispy shredded lamb tossed in a spicy, tangy Sichuan pepper glaze with scallions and sesame.', price: '₹725', tag: 'Popular', image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Wok-Tossed Exotic Greens', desc: 'Baby bok choy, broccoli, and water chestnuts tossed in fragrant garlic soy reduction.', price: '₹525', tag: 'Fresh', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'Sushi': [
+                { name: 'Tiger Prawn Tempura Roll', desc: 'Crispy prawn tempura, avocado, spicy mayo, topped with crisp tempura flakes and tobiko.', price: '₹845', tag: 'Chef Pick', image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Spicy Truffle Edamame Roll', desc: 'Avocado, cucumber, asparagus, finished with a drizzle of aromatic truffle oil and spicy chili crunch.', price: '₹695', tag: 'Plant-Based', image: 'https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'Dim Sum': [
+                { name: 'Wild Mushroom & Truffle Dim Sum', desc: 'Crystal dumplings filled with earthy wild mushrooms, water chestnuts, and fragrant truffle oil.', price: '₹595', tag: 'Delicate', image: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Classic Chicken & Scallion Bao', desc: 'Fluffy steamed buns stuffed with juicy minced chicken, scallions, and savory hoisin glaze.', price: '₹645', tag: 'Juicy', image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'Sliders': [
+                { name: 'Truffle Mushroom Sliders', desc: 'Crispy mushroom patty, truffle aioli, melted gouda, and arugula in mini brioche buns.', price: '₹545', tag: 'Gourmet', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Crispy Chicken Slider', desc: 'Panko-crusted chicken thigh, spicy coleslaw, and honey mustard glaze.', price: '₹585', tag: 'Crunchy', image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'Platters': [
+                { name: 'Tiger Five Grand Veg Platter', desc: 'Assortment of tandoori paneer tikka, stuffed mushrooms, dahi ke kebab, and malai broccoli.', price: '₹1295', tag: 'Sharing', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Non-Veg Kebab Symphony', desc: 'Murgh malai tikka, lamb seekh, tandoori prawns, and chicken tikka cigar.', price: '₹1595', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'Desserts': [
+                { name: 'Sizzling Brownie with Vanilla Bean', desc: 'Fudgy walnut chocolate brownie served on a sizzling iron skillet with hot fudge and vanilla gelato.', price: '₹475', tag: 'Indulgent', image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Rose & Cardamom Panna Cotta', desc: 'Silky Italian panna cotta infused with desi rose extract and crushed pistachios.', price: '₹445', tag: 'Fusion', image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80' }
+            ],
+            'Drinks': [
+                { name: 'Chandigarh Sunset Mocktail', desc: 'Fresh passionfruit puree, orange juice, kaffir lime leaf, and ginger ale with a smoked rim.', price: '₹395', tag: 'Signature', image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80' },
+                { name: 'Smoked Amber Old Fashioned', desc: 'Artisanal botanical blend with cinnamon smoke, orange bitters, and maple reduction.', price: '₹595', tag: 'Craft', image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80' }
+            ]
+        };
+
+        let activeCategory = 'North Indian';
+
+        function renderMenuTabs() {
+            const container = document.getElementById('category-tabs');
+            container.innerHTML = '';
+            menuCategories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.textContent = cat;
+                btn.className = `px-6 py-3 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${
+                    activeCategory === cat
+                        ? 'bg-[#D97706] text-[#0F0D0B] shadow-lg shadow-[#D97706]/30'
+                        : 'bg-[#16120F] text-[#A89888] border border-[#2C241E] hover:text-[#F3EFE6] hover:border-[#D97706]/50'
+                }`;
+                btn.onclick = () => selectCategory(cat);
+                container.appendChild(btn);
+            });
+        }
+
+        function renderMenuItems() {
+            const grid = document.getElementById('menu-grid');
+            grid.innerHTML = '';
+            const items = menuItems[activeCategory] || menuItems['North Indian'];
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'bg-[#16120F] rounded-2xl overflow-hidden border border-[#2C241E] p-6 flex flex-col justify-between shadow-xl hover:border-[#D97706]/40 transition-all';
+                card.innerHTML = `
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 relative">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-[#0F0D0B]/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-semibold text-[#D97706] border border-[#2C241E]">
+                            ${item.tag}
+                        </span>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-lg font-serif font-bold text-[#F3EFE6]">${item.name}</h3>
+                            <span class="text-lg font-bold text-[#D97706]">${item.price}</span>
+                        </div>
+                        <p class="text-xs text-[#A89888] font-light leading-relaxed mb-6">${item.desc}</p>
+                    </div>
+                    <a href="#reservation" class="w-full py-2.5 rounded-xl bg-[#1F1915] border border-[#2C241E] text-xs font-semibold tracking-wider text-center text-[#F3EFE6] hover:bg-[#D97706] hover:text-[#0F0D0B] transition-colors">
+                        Reserve to Taste
+                    </a>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function selectCategory(cat) {
+            activeCategory = cat;
+            renderMenuTabs();
+            renderMenuItems();
+            const menuSection = document.getElementById('menu-section');
+            menuSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Testimonials data & logic
+        const testimonials = [
+            { text: "An absolute gem on Madhya Marg! The ambiance is wonderfully plush yet welcoming. The Butter Chicken and sushi rolls were world-class.", author: "Aarav S.", role: "Food Critic & Local Patron", rating: 5 },
+            { text: "Hosted our corporate dinner here in Sector 26. Impeccable service, stunning presentation on the platters, and the private seating area was fantastic.", author: "Meera K.", role: "Corporate Director", rating: 5 },
+            { text: "Family weekend dinner was a massive hit. From toddlers loving the sliders to elders praising the authentic North Indian curries. 10/10 experience.", author: "Vikramjit B.", role: "Chandigarh Resident", rating: 5 }
+        ];
+        let currentTestimonial = 0;
+
+        function renderTestimonial() {
+            const t = testimonials[currentTestimonial];
+            document.getElementById('testimonial-author').textContent = t.author;
+            document.getElementById('testimonial-role').textContent = t.role;
+            document.getElementById('testimonial-text').textContent = `"${t.text}"`;
+            
+            const starsContainer = document.getElementById('testimonial-stars');
+            starsContainer.innerHTML = '';
+            for(let i=0; i<t.rating; i++) {
+                const icon = document.createElement('i');
+                icon.setAttribute('data-lucide', 'star');
+                icon.className = 'w-5 h-5 fill-current';
+                starsContainer.appendChild(icon);
+            }
+            lucide.createIcons();
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            renderTestimonial();
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            renderTestimonial();
+        }
+
+        // Reservation form handler
+        function handleReservationSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('res-name').value;
+            const phone = document.getElementById('res-phone').value;
+            const email = document.getElementById('res-email').value;
+            const date = document.getElementById('res-date').value;
+            const time = document.getElementById('res-time').value;
+            const guests = document.getElementById('res-guests').value;
+            const notes = document.getElementById('res-notes').value;
+
+            if(!name || !phone || !date) return;
+
+            const message = `Hello Tiger Five Chandigarh! I would like to reserve a table.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email || 'N/A')}%0A*Date:* ${encodeURIComponent(date)}%0A*Time:* ${encodeURIComponent(time)}%0A*Guests:* ${encodeURIComponent(guests)}%0A*Special Request:* ${encodeURIComponent(notes || 'None')}`;
+
+            window.open(`https://wa.me/916239926505?text=${message}`, '_blank');
+
+            document.getElementById('reservation-form').classList.add('hidden');
+            document.getElementById('reservation-success').classList.remove('hidden');
+
+            setTimeout(() => {
+                document.getElementById('reservation-form').reset();
+                document.getElementById('reservation-form').classList.remove('hidden');
+                document.getElementById('reservation-success').classList.add('hidden');
+            }, 6000);
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            renderMenuTabs();
+            renderMenuItems();
+            renderTestimonial();
+            lucide.createIcons();
+        };
+    </script>
+</body>
+</html>
